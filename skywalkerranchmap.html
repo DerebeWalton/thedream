@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Skywalker Ranch</title>
+		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<link rel="icon" type="image/png" href="SSMG.png" sizes="32x32"/>
+		<link rel="stylesheet" type="text/css" href="style2maps.css"><!--link to css-->
+		
+		
+		<script>
+		function initialize() {
+		var myCenter = new google.maps.LatLng(38.064451,-122.64635); //38.0644509,-122.646585
+ 		var mapProp = {
+  			center:myCenter,
+			zoom:14,
+			mapTypeId:google.maps.MapTypeId.SATELLITE
+  			};
+  		var marker = new google.maps.Marker({
+  			position:myCenter,
+  		});
+  		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  			marker.setMap(map);
+  		
+  		 
+		var myCenter = new google.maps.LatLng(38.0644509,-122.646585);
+  		var skyMapProp = {
+  			center:new google.maps.LatLng(38.0644509,-122.646585),
+  			zoom:5,
+			mapTypeId:google.maps.MapTypeId.MAP
+  			};
+  		var marker = new google.maps.Marker({
+  			position:myCenter,
+  		});
+  		var skymap=new google.maps.Map(document.getElementById("skywalkerMap"),skyMapProp);
+  		 marker.setMap(skymap);
+  		
+  		}
+  		google.maps.event.addDomListener(window, 'load', initialize);
+  		
+  		</script>
+  		</head>
+
+	<body>
+		<div id="googleMap" style="width:350px;height:350px;position:absolute;top:100%;left:350px"%;"></div>
+		<div id="skywalkerMap" style="width:350px;height:350px;position:absolute;top:100%;"></div>
+		
+		<!-- <input type="checkbox" id="drawer-toggle" name="drawer-toggle"/>
+	 	<label for="drawer-toggle" id="drawer-toggle-label"></label> -->
+		
+		<header><font face="helvetica" color="#6E9DFF"><b><center>Skywalker Ranch</center></font></b></h1></div></header>
+		
+		<!-- <nav id="drawer">
+	   		<ul id="navbar" class="bulletless">
+				<li class="navitem1""><a class="active" href="index.html">Index</a></li>
+				<li class="navitem2"><a href="history.html">History</a></li>
+				<li class="navitem3"><a href="badges.html">Badges</a></li>
+				<li class="navitem4"><a href="ranks.html">Ranks</a></li>
+			</ul>
+		</nav> -->
+
+		<center><p><font face="arial" size=35 color="#6CA128"></font><br><!-- this is a break tag btw. It basically is how to press return Derek --> 
+		</p>
+		<nav id=text><p><br><font face="Times New Roman" size="5" color="#446619">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		 Skywalker Ranch, Located 40 minutes north of San Francisco, is the pastoral home 
+		 to Lucasfilm's celebrated sound design, mixing and audio post-production facility, 
+		 Skywalker Sound.<br>Skywalker Sound occupies the 153,000-square-foot Technical Building, 
+		 which features a world-class scoring stage, six feature mix stages, 15 sound design suites, 
+		 50 editing suites, an ADR stage, two Foley stages, and the 300-seat Stag Theater. The property 
+		 also includes the iconic Main House and the beautiful Lake Ewok. Home to Lucasfilm's celebrated 
+		 sound design, mixing, and audio post-production facility.
+		 <br><br><br>http://lucasfilm.com/skywalker-ranch-marin
+		</nav></center>
+
+
+	</body>
+
+</html>
